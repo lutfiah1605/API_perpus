@@ -13,7 +13,7 @@
         $periode_pinjam = $_POST['periode_pinjam'];
         $status = $_POST['status'];
 
-        $sql = "UPDATE peminjaman SET id_buku='$id_buku',id_anggotar='$id_anggota',tgl_pinjam='$tgl_pinjam',periode_pinjam='$periode_pinjam',status='$status' WHERE id_peminjaman = '$id'";
+        $sql = "UPDATE peminjaman SET id_buku='$id_buku',id_anggota='$id_anggota',tgl_pinjam='$tgl_pinjam',periode_pinjam='$periode_pinjam',status='$status' WHERE id_peminjaman = '$id'";
         $conn->query($sql);
 
         $result['status']['success'] = true;
